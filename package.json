@@ -4,7 +4,8 @@
   "title": "SnippetsLab",
   "description": "Search your SnippetsLab snipets from Raycast",
   "icon": "command-icon.png",
-  "author": "huangsemao",
+  "author": "1874",
+  "homepage": "https://github.com/SnippetsLab-Raycast#readme",
   "categories": [
     "Developer Tools", "Productivity"
   ],
