@@ -1,3 +1,3 @@
 import SnippetsSearch from "./SnippetsSearch";
 
-export { SnippetsSearch};
+export { SnippetsSearch };

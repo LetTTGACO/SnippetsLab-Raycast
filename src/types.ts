@@ -9,9 +9,9 @@
 // }
 
 export interface SnippetsResult {
-  icon: { path: string }
+  icon: { path: string };
   action: string;
   uid: string;
-  title: string
+  title: string;
   subtitle: string;
 }
