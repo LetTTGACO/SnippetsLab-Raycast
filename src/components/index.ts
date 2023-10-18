@@ -1,2 +1,3 @@
+import { SnippetsDetail } from "./SnippetsDetail";
 import SnippetsResult from "./SnippetsResult";
-export { SnippetsResult };
+export { SnippetsResult, SnippetsDetail };

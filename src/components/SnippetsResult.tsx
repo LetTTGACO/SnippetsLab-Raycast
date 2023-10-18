@@ -9,6 +9,7 @@ import { execa } from "execa";
 import { SnippetsResult } from "../types";
 import { execFile } from "child_process";
 import { promisify } from "util";
+import { SnippetsDetail } from "./SnippetsDetail";
 
 const execFilePromisified = promisify(execFile);
 
@@ -40,6 +41,7 @@ export default function ({
       title={result.title}
       subtitle={category}
       icon="command-icon.png"
+      detail={<SnippetsDetail text={result.action} />}
       actions={
         <ActionPanel>
           <Action

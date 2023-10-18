@@ -1,4 +1,4 @@
-import { Action, ActionPanel, List, useNavigation } from "@raycast/api";
+import { Action, ActionPanel, List } from "@raycast/api";
 import { useState } from "react";
 import SnippetsResult from "../components/SnippetsResult";
 import { useSnippetsSearch } from "../hooks";
@@ -32,6 +32,7 @@ export default function SnippetsSearch() {
 
   return (
     <List
+      isShowingDetail={searchResults.length !== 0}
       isLoading={isLoadingSearchResults}
       searchBarPlaceholder="Search snippets by name or keyword..."
       onSearchTextChange={(newValue) => {
