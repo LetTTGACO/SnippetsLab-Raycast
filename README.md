@@ -13,4 +13,7 @@
 3. 运行`npm run build`
 4. Raycast Import Extension 导入，选择此步骤1中的文件夹即可
 
+# 原理
+用 `execa` + `child_process`运行本来运行在Alfred中的 SnippetsLabAlfredWorkflow 可执行文件
+
 
