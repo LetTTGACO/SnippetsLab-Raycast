@@ -20,10 +20,10 @@ export default function useSnippetsSearch(searchText: string): [SnippetsResult[]
       setState((previous) => ({ ...previous, isLoading: true }));
       cancel.current?.abort();
       cancel.current = new AbortController();
-      if (!searchText) {
-        setState({ results: [], isLoading: false });
-        return;
-      }
+      // if (!searchText) {
+      //   setState({ results: [], isLoading: false });
+      //   return;
+      // }
       try {
         const res = await searchSnippets(snippetsApp, `--query=${searchText}`, cancel.current.signal)
         setState({
