@@ -9,7 +9,6 @@ import { execa } from "execa";
 import { SnippetsResult } from "../types";
 import { execFile } from "child_process";
 import { promisify } from "util";
-import useSnippetsApp from "../hooks/useSnippetsApp";
 
 const execFilePromisified = promisify(execFile);
 
@@ -24,18 +23,17 @@ function accessories(tags: string[] | null): any {
 export default function ({
   result,
   index,
+  snippetsApp,
 }: {
   result: SnippetsResult;
   index: string;
+  snippetsApp: any;
 }) {
   // 提取分类
   const categoryRegex = /^(.*?)(?=,|\s\()/;
   const category = result.subtitle.match(categoryRegex)![1].trim();
   const tagRegex = /#(\S+)/g;
   const tags = result.subtitle.match(tagRegex);
-  const [snippetsApp, issnippetsAppLoading] = useSnippetsApp();
-  console.log("category", category);
-  console.log("subtitle", tags);
   return (
     <List.Item
       key={result.uid}

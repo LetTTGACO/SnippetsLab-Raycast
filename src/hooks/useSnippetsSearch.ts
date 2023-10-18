@@ -26,7 +26,6 @@ export default function useSnippetsSearch(searchText: string): [SnippetsResult[]
       }
       try {
         const res = await searchSnippets(snippetsApp, `--query=${searchText}`, cancel.current.signal)
-        console.log(res)
         setState({
           results: res,
           isLoading: false,
@@ -39,7 +38,6 @@ export default function useSnippetsSearch(searchText: string): [SnippetsResult[]
       cancel.current?.abort();
     };
   }, [snippetsApp, searchText]);
-  console.log('state.results', state.results)
   return [state.results, state.isLoading];
 }
 

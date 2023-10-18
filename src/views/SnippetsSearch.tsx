@@ -40,7 +40,7 @@ export default function SnippetsSearch() {
     >
       <List.Section title="Search Results">
         {searchResults.map((result, index) => (
-          <SnippetsResult result={result} index={result.uid} key={index} />
+          <SnippetsResult snippetsApp={snippetsApp} result={result} index={result.uid} key={index} />
         ))}
       </List.Section>
     </List>
