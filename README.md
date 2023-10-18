@@ -13,7 +13,9 @@
 3. 运行`npm run build`
 4. Raycast Import Extension 导入，选择此步骤1中的文件夹即可
 
+> SnippetsLabAlfredWorkflow 文件也可以从SnippetsLab设置中安装到Alfred获取，在Alfred的Workflow找到并从访达中打开，也能找到此文件
+
+
 # 原理
 用 `execa` + `child_process`运行本来运行在Alfred中的 SnippetsLabAlfredWorkflow 可执行文件
-
 
