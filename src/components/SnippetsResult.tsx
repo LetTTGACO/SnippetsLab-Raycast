@@ -43,15 +43,15 @@ export default function ({
       actions={
         <ActionPanel>
           <Action
+            title="Copy to clipboard"
+            shortcut={{ modifiers: ["cmd"], key: "enter" }}
+            onAction={async () => copyCallbackInBackground(index)}
+          />
+          <Action
             title="Paste"
             onAction={async () =>
               pasteCallbackInBackground(snippetsApp!.path, index)
             }
-          />
-          <Action
-            title="Copy to clipboard"
-            shortcut={{ modifiers: ["cmd"], key: "enter" }}
-            onAction={async () => copyCallbackInBackground(index)}
           />
           <Action
             title="Open in SnippetsLab"
