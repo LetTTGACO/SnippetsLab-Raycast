@@ -18,21 +18,15 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.41.1",
+    "@raycast/api": "^1.59.0",
     "@raycast/utils": "^1.4.8",
-    "execa": "6.1.0",
-    "html-entities": "2.3.2",
-    "fast-xml-parser": "3.20.3",
-    "tempy": "2.0.0",
-    "raycast-toolkit": "1.0.3"
+    "execa": "6.1.0"
   },
   "devDependencies": {
-    "@types/node": "16.10.3",
+    "@raycast/eslint-config": "1.0.5",
+    "@types/node": "18.8.3",
     "@types/react": "18.0.9",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1",
     "typescript": "^4.4.3"
   },
